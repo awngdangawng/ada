@@ -90,7 +90,7 @@ a:focus {
 }
 
 .top-bar .logo h1 {
-    margin-top: -90px;
+    margin-top: -120px;
     color: #030f27;
     font-size: 30px;
     line-height: 60px;
@@ -99,19 +99,28 @@ a:focus {
 }
 
 .top-bar .logo h2 {
-    margin-top: -20px;
+    margin-top: -10px;
     color: crimson;
-    font-size: 25px;
+    font-size: 23px;
     margin-left: 160px;
+}
+
+.top-bar .logo h5 {
+    margin-top: -5px;
+    color: rgb(24, 0, 245);
+    font-size: 23px;
+    margin-left: 160px;
+    font-style: italic;
 }
 
 .top-bar .logo h3{
     
-    margin-top: -90px;
+    margin-top: -125px;
     font-size: 16px;
-    line-height: 80px;
-    margin-left: 920px;
+    line-height: 5px;
+    margin-left: 770px;
     font-weight: bolder;
+    
 }
 
 .top-bar .logo h3 a{
@@ -125,12 +134,40 @@ a:focus {
 
 .top-bar .logo h4{
     
-    margin-top: -60px;
+    margin-top: 15px;
     font-size: 16px;
-    line-height: 80px;
-    margin-left: 920px;
+    line-height: 5px;
+    margin-left: 770px;
     font-weight: bolder;
 }
+
+.top-bar .logo h6 a{
+    color: crimson;
+}
+
+.top-bar .logo h6{
+    
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 5px;
+    margin-left: 770px;
+    font-weight: bolder;
+}
+
+.top-bar .logo h7{
+    
+    margin-top: -100px;
+    font-size: 16px;
+    line-height: 5px;
+    margin-left: 770px;
+    font-weight: bolder;
+    
+}
+
+.top-bar .logo h7 a{
+    color: crimson;
+}
+
 
 .top-bar .logo img {
     width: 130px;
@@ -542,7 +579,7 @@ a:focus {
 }
 
 .about .section-header p {
-    font-size: 23px;
+    font-size: 30px;
     color: crimson;
     font-weight: bolder;
 }
@@ -561,6 +598,12 @@ a:focus {
 .about .about-text p {
     font-size: 18px;
     color: #000;
+    font-weight: bold;
+}
+
+.about .about-text h3 {
+    font-size: 23px;
+    color: #1100ff;
     font-weight: bold;
 }
 
@@ -736,6 +779,7 @@ a:focus {
 
 .team .team-img img {
     width: 100%;
+   
 }
 
 .team .team-text {
@@ -845,6 +889,32 @@ a:focus {
     background: #030f27;
 }
 
+.team .team-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(3, 15, 39, .7);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team .team-item:hover .team-overlay {
+    opacity: 1;
+}
+
+.team .team-overlay a {
+    margin: 0;
+    color: #ffffff;
+    background-color: #c31432;
+    padding: 10px 20px;
+}
+
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -947,29 +1017,29 @@ a:focus {
 .portfolio .portfolio-text {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 90px;
     background: #030f27;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: wrap;
     text-overflow: ellipsis;
 }
 
 .portfolio .portfolio-text h3 {
     margin: 0;
-    padding: 0 15px 0 25px;
+    padding: 0 25px 0 25px;
     width: calc(100% - 60px);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     color: #fdbe33;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    margin-top: 1px;
+    line-height: 27px;
+    align-items: center;
+  
 }
 
 .portfolio .portfolio-warp a.btn {
     width: 60px;
-    height: 60px;
+    height: 500px;
     padding: 3px 0 0 3px;
     display: flex;
     align-items: center;
@@ -1363,6 +1433,27 @@ a:focus {
 	margin-bottom: 15px;
 }
 
+.contact-in h3 {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contact-in h4 {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contact-in h5 {
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 15px;
+    color: #ffffff;
+}
+
 .contact-in h2 i {
 	font-size: 16px;
 	width: 40px;
@@ -1379,6 +1470,7 @@ a:focus {
 	font-size: 14px;
 	font-weight: 300;
 	margin-bottom: 20px;
+   
 }
 
 .contact-in ul {
@@ -1497,3 +1589,96 @@ a:focus {
 	}
 
 }
+
+/*******************************/
+/********** ourpolicy start **********/
+/*******************************/
+.ourpolicy {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.ourpolicy .section-header {
+    margin-bottom: 30px;
+}
+
+.ourpolicy .section-header p {
+    font-size: 45px;
+    color: crimson;
+    font-weight: bolder;
+}
+
+.ourpolicy .section-header h2 {
+    font-size: 22px;
+    color: rgb(34, 4, 119);
+    font-weight: bolder;
+}
+
+.ourpolicy .about-img {
+    position: relative;
+    height: 100%;
+}
+
+.ourpolicy .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ourpolicy .ourpolicy-text p {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.ourpolicy .ourpolicy-text h2 {
+    font-size: 20px;
+    color: #0400fc;
+    font-weight: bold;
+}
+
+
+.ourpolicy .ourpolicy-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #030f27;
+    border-radius: 0;
+    background: #fdbe33;
+    transition: .3s;
+}
+
+.ourpolicy .ourpolicy-text a.btn:hover {
+    color: #fdbe33;
+    background: #030f27;
+}
+
+@media (max-width: 767.98px) {
+    .ourpolicy .about-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
+
+/******* ourpolicy end*********/
+
+/***** Available Service Start *******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
