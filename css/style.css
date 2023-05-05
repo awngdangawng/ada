@@ -789,6 +789,47 @@ a:focus {
 }
 
 
+
+.main-service .service-item a.btn {
+    width: 60px;
+    height: 60px;
+    padding: 3px 0 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 100;
+    color: #030f27;
+    background: #fdbe33;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.main-service .service-item:hover a.btn {
+    color: #ffffff;
+}
+
+.main-service .service-btn a.btn {
+    position: relative;
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #030f27;
+    border-radius: 0;
+    background: #fdbe33;
+    transition: .3s;
+    margin-left: 490px;
+}
+
+.main-service .service-btn a.btn:hover {
+    color: #fdbe33;
+    background: #030f27;
+}
+
+
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
@@ -1699,6 +1740,76 @@ a:focus {
 /******* ourpolicy end*********/
 
 /***** Available Service Start *******/
+
+
+/******* Paragraph ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div{
+    
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.col1, .col2{
+    max-width: 700px;
+    padding: 10px;
+
+}
+
+.col1 h1{
+    color: #ff01dd;
+    padding: 20px;
+}
+
+.col2 h1{
+    color: #ff01dd;
+    padding: 20px;
+}
+
+.col1 p{
+    color: #3801ff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.col2 p{
+    color: #3801ff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.header p{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(7, 1, 37);
+    text-align: center;
+}
+
+/******* end paragraph *******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
