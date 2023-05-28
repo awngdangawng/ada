@@ -395,12 +395,11 @@
                 <div class="contact-in">
                     <h1>Send a Message</h1>
                     
-                    <form action="https://formsubmit.co/e1b77e3d31707295ab1190cb2b562984" method="POST">
-                        <input type="text" placeholder="Full Name" class="contact-in-input">
-                        <input type="text" placeholder="Email" class="contact-in-input">
-                        <input type="text" placeholder="Subject" class="contact-in-input">
-                        <textarea placeholder="Message" class="contact-in-textarea"></textarea>
-                        <input type="submit" value="SUBMIT" class="contact-in-btn">
+                        <input type="text" id="name" placeholder="Enter your name" class="contact-in-input">
+                        <input type="email" id="email" placeholder="Enter your email" class="contact-in-input">
+                        <input type="subject" id="subject" placeholder="Enter your subject" class="contact-in-input">
+                        <textarea id="message" class="contact-in-textarea"></textarea>
+                        <button class="btn btn-primary"onclick="sendMail()">Submit</button>
                     </form>
                 </div>
             </div>
